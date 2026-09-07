@@ -1,8 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import memory1 from './assets/memory-lane/memory-1.jpg';
-import memory2 from './assets/memory-lane/memory-2.jpg';
-import memory3 from './assets/memory-lane/memory-3.jpg';
-import memory4 from './assets/memory-lane/memory-4.jpg';
+
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 type Screen =
