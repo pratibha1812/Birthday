@@ -1,4 +1,8 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import memory1 from './assets/memory-lane/memory-1.jpg';
+import memory2 from './assets/memory-lane/memory-2.jpg';
+import memory3 from './assets/memory-lane/memory-3.jpg';
+import memory4 from './assets/memory-lane/memory-4.jpg';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 type Screen =
@@ -1464,22 +1468,22 @@ function Gift2Screen({ onBack }: { onBack: () => void }) {
 // ─── Screen 8: Gift 3 — Memory Lane ───────────────────────────────────────────
 const PHOTOS = [
   {
-    src: '/memory-lane/memory-1.jpg',
+    src: memory1,
     label: 'always smiling',
     rot: -3,
   },
   {
-    src: '/memory-lane/memory-2.jpg',
+    src: memory2,
     label: 'that one day',
     rot: 2.2,
   },
   {
-    src: '/memory-lane/memory-3.jpg',
+    src: memory3,
     label: 'favourite memory',
     rot: -2,
   },
   {
-    src: '/memory-lane/memory-4.jpg',
+    src: memory4,
     label: 'best memories',
     rot: 3,
   },
