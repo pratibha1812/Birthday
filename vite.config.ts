@@ -2,10 +2,6 @@ import { defineConfig, type HtmlTagDescriptor, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
-import memory1 from './assets/memory-lane/memory-1.jpg';
-import memory2 from './assets/memory-lane/memory-2.jpg';
-import memory3 from './assets/memory-lane/memory-3.jpg';
-import memory4 from './assets/memory-lane/memory-4.jpg';
 
 import siteConfiguration from './.figma/make/site.json'
 
