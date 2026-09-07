@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600;1,9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.12; transform: scale(0.65); }
+  50% { opacity: 0.95; transform: scale(1.35); }
+}
+
+@keyframes float-up {
+  0% { opacity: 0.55; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-115vh) scale(0.4); }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-16px) rotate(0deg); opacity: 1; }
+  80% { opacity: 0.9; }
+  100% { transform: translateY(105vh) rotate(740deg); opacity: 0; }
+}
+
+@keyframes shake-x {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-13px); }
+  30% { transform: translateX(13px); }
+  45% { transform: translateX(-9px); }
+  60% { transform: translateX(9px); }
+  75% { transform: translateX(-5px); }
+  90% { transform: translateX(5px); }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.18); }
+}
+
+@keyframes heartbeat-scale {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.28); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.18); }
+  70% { transform: scale(1); }
+}
+
+@keyframes float-heart {
+  0% { opacity: 0.8; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-130px) scale(0.35); }
+}
+
+@keyframes letter-emerge {
+  from { opacity: 0; transform: translateY(32px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes cinematic-in {
+  from { opacity: 0; filter: blur(6px) brightness(0.75); transform: scale(1.04); }
+  to { opacity: 1; filter: blur(0) brightness(1); transform: scale(1); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-shake { animation: shake-x 0.65s ease-in-out; }
+.animate-cinematic { animation: cinematic-in 1.6s ease-out forwards; }
+.animate-fade-up { animation: fade-in-up 0.7s ease-out forwards; }
