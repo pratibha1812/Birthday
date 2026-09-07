@@ -1464,7 +1464,7 @@ function Gift2Screen({ onBack }: { onBack: () => void }) {
 // ─── Screen 8: Gift 3 — Memory Lane ───────────────────────────────────────────
 const PHOTOS = [
   {
-    src: 'public\memory-lane\memory-1.jpg',
+    src: '/memory-lane/memory-1.jpg',
     label: 'always smiling',
     rot: -3,
   },
